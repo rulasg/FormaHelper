@@ -33,7 +33,7 @@ function Test-Formanator{
         return $ret
     }
     catch {
-        $_.Exception.Message | Write-MyDebug -Section "formanator"
+        $_.Exception.Message | Write-MyVerbose
         return $false
     }
 
